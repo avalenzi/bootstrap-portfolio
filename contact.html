@@ -10,60 +10,103 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   ​
-  <link rel="stylesheet" href="style-index.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
   ​
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">John Telban</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="about-me.html">About<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-      </ul>
+ 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mb-0">
+    <div class="container">
+      <div class="row">
+        <h1 id="name">Anthony Valenzi</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-5">
+            <li class="nav-item">
+                <strong>520.429.9021</strong>
+                <br>
+                <strong>anthonymv1313@gmail.com</strong>
+                <br>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="" target="_blank">
+                    <strong>Resume</strong>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/avalenzi" target="_blank">
+                    <strong>GitHub</strong>
+                </a>
+            </li>                                              
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/anthony-michael-valenzi-1827b0111/" target="_blank">
+                    <strong>LinkedIn</strong>
+                </a>
+            </li>
+        </ul>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <button class="btn btn-outline-primary btnSize" type="button">
+            <a class="nav-link" href="index.html">About </a>
+            </button>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-primary btnSize" type="button">
+            <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </button>
+          </li>
+          <li class="nav-item  active">
+            <button class="btn btn-outline-primary btnSize" type="button">
+            <a class="nav-link" href="contact.html"
+              >Contact <span class="sr-only">(current)</span></a>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
+  <!-- End of Navigation Bar -->
   <div class="container">
     <div class="row">
-      <div class="col-8">
-        <h1>About Me
-        </h1>
-        <hr>
+      <div class="col" id="contactBox">
+          <h1 id=secondHeading>Contact</h1>
+          <hr>
+          <form>
+  <!-- Form 1 -->
+            <div class="form-group">
+              <label for="inputName" class="formLabels">Name</label>
+              <input type="name" class="form-control" id="inputName" placeholder="John Smith">
+            </div>
+  <!-- Form 2 -->
+            <div class="form-group">
+              <label for="inputEmail">Email address</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="example@gmail.com">
+            </div>
+  <!-- Form 3 -->
+            <div class="form-group">
+              <label for="textArea">Message</label>
+              <textarea class="form-control" id="textArea" rows="6"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+          </form>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-6 col-lg-3">
-        <img src="http://placehold.it/200x200" alt="Photo of John Telban" width="250px" height="250px" class="img">
-      </div>
-      <div class="col-md-6 col-lg-9">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iste quos voluptatum
-          inventore labore, perspiciatis totam voluptatem exercitationem eum temporibus nostrum dolore
-          quod mollitia odio laudantium repellat esse. Sequi, sit.Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Excepturi iste quos voluptatum
-          inventore labore, perspiciatis totam voluptatem exercitationem eum temporibus nostrum dolore
-          quod mollitia odio laudantium repellat esse. Sequi, sit.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto non sit quasi, dolor quod, nam incidunt
-          mollitia necessitatibus tempora enim dignissimos ipsa quas aliquam a dolorem, saepe beatae impedit! Animi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non accusantium fugit rerum expedita laborum autem
-          at. Quia, aut soluta ratione animi tempore, voluptatem ut id vero, magnam iusto ullam nobis. Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Omnis officiis laboriosam, ipsa at doloribus vitae minima cumque odio
-          accusamus fugit, consequuntur autem quae incidunt ipsum unde inventore ullam. In, omnis?</p>
-      </div>
+  </div>
+
+<!-- Footer -->
+  <footer class="page-footer">
+    
     </div>
-  </div>
-  </div>
-  </div>
+  </footer>
+</body>
 </body>
 
 </html>

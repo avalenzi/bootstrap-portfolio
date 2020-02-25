@@ -1,57 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>About Me</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="style.css">
-
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Anthony Michael Valenzi</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-0">
+    <div class="container">
+        <div class="row">
+        <h1 id="name">Anthony Valenzi</h1>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-5">
+                <li class="nav-item">
+                    <strong>anthonymv1313@gmail.com</strong>
+                    <br>
+                    <strong>520.429.9021</strong>
+                    <br>
+                </li>
+            </ul>
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="" target="_blank">
+                        <strong>Resume</strong>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="https://github.com/avalenzi" target="_blank">
+                        <strong>GitHub</strong>
+                    </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/anthony-michael-valenzi-1827b0111/" target="_blank">
+                        <strong>LinkedIn</strong>
                     </a>
                 </li>
             </ul>
         </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+            <button class="btn btn-outline-primary btnSize" type="button">
+              <a class="nav-link" href="index.html"
+                >About <span class="sr-only">(current)</span></a
+              >
+              </button>
+            </li>
+            <li class="nav-item">
+            <button class="btn btn-outline-primary btnSize" type="button">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </button>
+            </li>
+            <li class="nav-item">
+            <button class="btn btn-outline-primary btnSize" type="button">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </button>
+            </li>
+          </ul>
+        </div>
+    </div>
     </nav>
-</body>
-<div class="container">
-    <h1>About Me</h1>
-    <hr>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="content">
-          <img src="http://placehold.it/150x150
-          " alt="Placeholder" style="width:33.3%">
-          <div class="row">
-            <div class="col-md-8">
-                <div class="About Me">
-                  <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem </p>
+  <!-- End of Navigation Bar-->
+    <div class="container">
+      <div class="row">
+        <div class="col" id="box">
+            <!-- <div id="box"> -->
+                <h1 id="secondHeading">About Me</h1>
+                <hr>
+  <!-- Image with text wrapped around it -->
+                <img
+                src="" alt="Photo"
+                class="img-thumbnail float-left mr-3" id="indexPhoto">
+                <p>
+                    My name is Anthony Valenzi and I am currently enrolled in the University of Arizona Coding Boot Camp to pursue a career path in the Coding/Software Development industy. I was born and rained in Pittsburgh PA and moved out to Arizona to attend both University of Arizona and Arizona State University where I went to study Biochemisty. 
+                </p>
+                <p>
+                    I have worked in various sales positions in the past 8 years while creating my own online personal training business through social media software. I have always been fascinated by the tecnology industry and its ever evolving capabilities which is what set me on my new career path. I have a naturally competitive nature due to growing up competing in sporting events, which pushes me to challenge my mental strenth which has helped me become successful in my past sales positions. 
+                </p>
                 
-                </div>
-              </div>
-            </div>
-          </div>
-            
+            <!-- </div> -->
+        </div>
+      </div>
+    </div>
+<!-- Footer -->
+    <footer class="index-footer">
+      <div class="container">
+        
+      </div>
+    </footer>
+  </body>
 </html>
